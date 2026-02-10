@@ -2,8 +2,36 @@
 <html>
 <head>
     <title>Last-Minute Exam Helper</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Last-Minute Exam Helper</h1>
+
+<h2>Last-Minute Exam Helper</h2>
+
+<label>Subject:</label><br>
+<input type="text" id="subject" placeholder="e.g. Data Structures"><br><br>
+
+<label>Topics (comma separated):</label><br>
+<input type="text" id="topics" placeholder="Stack, Queue, Binary Search"><br><br>
+
+<label>Hours left for exam:</label><br>
+<select id="hours">
+    <option value="2">2 Hours</option>
+    <option value="6">6 Hours</option>
+    <option value="24">24 Hours</option>
+</select><br><br>
+
+<label>Exam Mode:</label><br>
+<select id="mode">
+    <option value="pass">Pass Mode</option>
+    <option value="score">Score Mode</option>
+</select><br><br>
+
+<button onclick="generatePlan()">Generate Study Plan</button>
+
+<h3>Output:</h3>
+<div id="output"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
